@@ -40,6 +40,11 @@ namespace Assessment.Controllers
 
         //Solution to the second question
         //sample object is as belows
+        // {
+        //     "arr":[1,2],
+        //     "K" : 5
+        // }
+
         [HttpPost]
         public IActionResult Second(RequestDto req )
         {
@@ -63,7 +68,7 @@ namespace Assessment.Controllers
                 return Ok(req.arr[req.K-1]);
             }
 
-            return Ok("NO UNIQUE DIFFERENCE");
+            return Ok(-1);
         }
 
 
